@@ -10,7 +10,7 @@ class Lazydlp < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/ayushsharma74/lazydlp/releases/download/v0.1.4/lazydlp_Darwin_x86_64.tar.gz"
-      sha256 "61a7a3e2e3f33c917d1871ad2bfd4f06ccc7349c6262d8a8d202a823851b1338"
+      sha256 "c76477a49398844425210347a1bc7204a5df4d097d80a03ea4b4f28e1939b8a2"
 
       def install
         bin.install "lazydlp"
@@ -18,7 +18,7 @@ class Lazydlp < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/ayushsharma74/lazydlp/releases/download/v0.1.4/lazydlp_Darwin_arm64.tar.gz"
-      sha256 "7f48840498be56f036d1af1f3a75ed4c368ee3d2c6a4c6ea467634662f29bf55"
+      sha256 "2d7839d121b139482964cdabb6e3b9415bd9d94e438d7eb2ca4a42cc34668872"
 
       def install
         bin.install "lazydlp"
@@ -29,14 +29,14 @@ class Lazydlp < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/ayushsharma74/lazydlp/releases/download/v0.1.4/lazydlp_Linux_x86_64.tar.gz"
-      sha256 "0816debf4c232a68d702c4b184983ddacd17f08ddb5196e554655149c158990d"
+      sha256 "4b67b85821d18b50fcc6f82a5251a702d11e6923bad3edb84a0ec49befd991e7"
       def install
         bin.install "lazydlp"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/ayushsharma74/lazydlp/releases/download/v0.1.4/lazydlp_Linux_arm64.tar.gz"
-      sha256 "265cab5f14055de28148f2a4436141f753cb33d99ca3598edc986405ccb77181"
+      sha256 "75fdcda60e735088d646796c7977fe437f3b03286c333a3668e9c4500103f518"
       def install
         bin.install "lazydlp"
       end
