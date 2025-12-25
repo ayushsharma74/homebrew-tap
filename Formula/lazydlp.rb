@@ -5,20 +5,20 @@
 class Lazydlp < Formula
   desc "A TUI for yt-dlp written in Go."
   homepage "https://github.com/ayushsharma74/lazydlp"
-  version "0.1.5"
+  version "0.1.2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ayushsharma74/lazydlp/releases/download/v0.1.5/lazydlp_Darwin_x86_64.tar.gz"
-      sha256 "9cd1e761885c8591985ac2583dd1b0e27ff6a4940c3103f5803cbd69cd4a2e46"
+      url "https://github.com/ayushsharma74/lazydlp/releases/download/v0.1.2/lazydlp_Darwin_x86_64.tar.gz"
+      sha256 "bca5419a1cbdfe94d68bcfabaf17fc8535062e61c26ccf8484e7d055c45e49dc"
 
       def install
         bin.install "lazydlp"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ayushsharma74/lazydlp/releases/download/v0.1.5/lazydlp_Darwin_arm64.tar.gz"
-      sha256 "445d478e16b864ddf5544c4ee7436feb383503bab6de58015ee7647a6c59c520"
+      url "https://github.com/ayushsharma74/lazydlp/releases/download/v0.1.2/lazydlp_Darwin_arm64.tar.gz"
+      sha256 "6d7493daeea9f7fa6975d17593f95bd5c2856bceed4cc5e0e519c8e100eb2856"
 
       def install
         bin.install "lazydlp"
@@ -28,15 +28,15 @@ class Lazydlp < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ayushsharma74/lazydlp/releases/download/v0.1.5/lazydlp_Linux_x86_64.tar.gz"
-      sha256 "ef284291464b9cf069ca3395038d90aae86491eb75b5f45899875fdf4b358e9d"
+      url "https://github.com/ayushsharma74/lazydlp/releases/download/v0.1.2/lazydlp_Linux_x86_64.tar.gz"
+      sha256 "3cda9fc31fb93a8a334c525a9880e0b2d0b5c2ad50b8f826213025395d96c154"
       def install
         bin.install "lazydlp"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ayushsharma74/lazydlp/releases/download/v0.1.5/lazydlp_Linux_arm64.tar.gz"
-      sha256 "5c855300d2a21ea3ef3ca51c10f0081ae3855832b40b3c0c00f50c7ed73f823b"
+      url "https://github.com/ayushsharma74/lazydlp/releases/download/v0.1.2/lazydlp_Linux_arm64.tar.gz"
+      sha256 "06ea49a69db56e47689f89430d9fb5e00833796f43d6ed9bd62543fba90edbc0"
       def install
         bin.install "lazydlp"
       end
