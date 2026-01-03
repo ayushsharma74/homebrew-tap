@@ -10,7 +10,7 @@ class Portkiller < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/ayushsharma74/portkiller/releases/download/v0.0.2/portkiller_Darwin_x86_64.tar.gz"
-      sha256 "5660dfde689ffd943db4f2db23a84243264348a7d8cfce8eb1e6364fa2dd44a7"
+      sha256 "e82f63078a5ad2173b60c81d52d6ece672a58a3033f12742ff88e6e34aad3a4d"
 
       def install
         bin.install "portkiller"
@@ -18,7 +18,7 @@ class Portkiller < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/ayushsharma74/portkiller/releases/download/v0.0.2/portkiller_Darwin_arm64.tar.gz"
-      sha256 "a7ba58a1ad5e1d826d2dd477970cf93a05c54cd0e8714a34fe8217066c4b0484"
+      sha256 "f905c2e67e798f8b17e1416990b55205eda9e3a14339ad2498b14d0d42ade7c6"
 
       def install
         bin.install "portkiller"
@@ -29,14 +29,14 @@ class Portkiller < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/ayushsharma74/portkiller/releases/download/v0.0.2/portkiller_Linux_x86_64.tar.gz"
-      sha256 "3ba258b4f7cbd8c5a13d7dca71bdce2ed777b0d518b8328ea4e8072f5347928d"
+      sha256 "af6ca84a327663f288f2c6cee74bfc4a6e607044c676b39b09ff755f66c712ce"
       def install
         bin.install "portkiller"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/ayushsharma74/portkiller/releases/download/v0.0.2/portkiller_Linux_arm64.tar.gz"
-      sha256 "a4d092b129a74e9eae3395c8cf4925229f4152d3d9aa00140f69cf79381df0d3"
+      sha256 "b8c5416caa3250994873d9e01356e1372af20080ce2f81b00febcb36277654ff"
       def install
         bin.install "portkiller"
       end
